@@ -76,5 +76,6 @@ class FundTrader(object):
         conn.close()
 if __name__ == '__main__':
     t = FundTrader()
-    t.init_sql_struct()
+    # 只有初始化数据库才执行
+    # t.init_sql_struct()
     t.update_fund_trader()
