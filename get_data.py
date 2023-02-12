@@ -78,4 +78,5 @@ if __name__ == '__main__':
     t = FundTrader()
     # 只有初始化数据库才执行
     # t.init_sql_struct()
+    # select * from Trader where trader_days> 365 and trader_month_value >0.9 and trader_year_value>10 order by trader_value desc limit 10;
     t.update_fund_trader()
